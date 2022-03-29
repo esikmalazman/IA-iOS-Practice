@@ -1,0 +1,50 @@
+//
+//  AppDelegate.swift
+//  Dependency Injection
+//
+//  Created by Bart Jacobs on 29/01/2018.
+//  Copyright © 2018 Bart Jacobs. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    // MARK: - Properties
+    
+    var window: UIWindow?
+    
+    // MARK: -
+    
+    private var notes: [Note] {
+        return [
+            Note(title: "Monday, January 11", contents: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac dolor justo, ac tempus leo. Etiam pulvinar eros at lectus sollicitudin scelerisque."),
+            Note(title: "Another Day", contents: "Aliquam erat volutpat. Suspendisse eu eros non elit blandit suscipit. Morbi scelerisque euismod tempus. Vestibulum elementum tincidunt tempor. Mauris sodales tristique adipiscing."),
+            Note(title: "Ideas", contents: "Sed venenatis lorem quis eros hendrerit consequat. Sed a est leo. Donec sapien libero, rutrum eget luctus ac, accumsan vel lectus. Ut quis libero ante. Ut volutpat, massa ac aliquam molestie, neque est blandit diam, non adipiscing purus magna vitae massa."),
+            Note(title: "Help", contents: "Vestibulum fermentum consectetur sem, non aliquet nisl varius porta. Nulla consectetur tellus vel nibh tincidunt nec tincidunt nunc pellentesque. Etiam vel arcu sit amet quam auctor tincidunt commodo eu leo. Aliquam in arcu nulla. Donec eget imperdiet dui. Praesent vitae odio leo. Morbi bibendum lobortis sapien sit amet posuere.")
+        ]
+    }
+    
+    // MARK: - Application Life Cycle
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Initialize Root View Controller
+        guard let rootViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController() as? RootViewController else {
+            fatalError("Unable to Instantiate Root View Controller")
+        }
+        
+#warning("Injecting dependency to initial view controller")
+        // Configure Root View Controller
+        rootViewController.notes = notes
+#warning("Need to set window rootViewController to our initial vc to make the DI workd")
+        // Configure Window
+        window?.rootViewController = rootViewController
+        
+        // Make Key and Visible
+        window?.makeKeyAndVisible()
+        
+        return true
+    }
+    
+}

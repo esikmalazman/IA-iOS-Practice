@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z4J-bA-xmR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swipe Card-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SingleViewController" customModule="Tinder_Swipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="af1-ba-1Kc" userLabel="CardView">
+                                <rect key="frame" x="50" y="265.5" width="314" height="365"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nasi-lemak" translatesAutoresizingMaskIntoConstraints="NO" id="zQ9-Kd-Dli">
+                                        <rect key="frame" x="15" y="85" width="284" height="270"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="270" id="nkz-zz-L2q"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate this food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obn-89-ek5">
+                                        <rect key="frame" x="5" y="15" width="304" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nasi lemak " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmM-o6-kHA">
+                                        <rect key="frame" x="113" y="55" width="88" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kvZ-f7-SFN">
+                                        <rect key="frame" x="35" y="111" width="244" height="210"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="210" id="eDL-sh-cof"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="obn-89-ek5" firstAttribute="top" secondItem="af1-ba-1Kc" secondAttribute="top" constant="15" id="5yS-dj-8fQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="kvZ-f7-SFN" secondAttribute="trailing" constant="35" id="MfH-R8-UOu"/>
+                                    <constraint firstItem="zQ9-Kd-Dli" firstAttribute="leading" secondItem="af1-ba-1Kc" secondAttribute="leading" constant="15" id="Zw7-oN-Mxd"/>
+                                    <constraint firstAttribute="trailing" secondItem="zQ9-Kd-Dli" secondAttribute="trailing" constant="15" id="boe-NP-wbo"/>
+                                    <constraint firstAttribute="bottom" secondItem="zQ9-Kd-Dli" secondAttribute="bottom" constant="10" id="eYe-C3-xtc"/>
+                                    <constraint firstAttribute="height" constant="365" id="n55-EQ-atC"/>
+                                    <constraint firstItem="pmM-o6-kHA" firstAttribute="top" secondItem="obn-89-ek5" secondAttribute="bottom" constant="10" id="tUe-7X-mDW"/>
+                                    <constraint firstItem="obn-89-ek5" firstAttribute="leading" secondItem="af1-ba-1Kc" secondAttribute="leading" constant="5" id="tzS-il-zWy"/>
+                                    <constraint firstAttribute="trailing" secondItem="obn-89-ek5" secondAttribute="trailing" constant="5" id="uI4-NC-wR3"/>
+                                    <constraint firstItem="kvZ-f7-SFN" firstAttribute="top" secondItem="pmM-o6-kHA" secondAttribute="bottom" constant="35" id="vsj-5I-N5K"/>
+                                    <constraint firstItem="kvZ-f7-SFN" firstAttribute="leading" secondItem="af1-ba-1Kc" secondAttribute="leading" constant="35" id="yuy-xA-XS1"/>
+                                    <constraint firstItem="pmM-o6-kHA" firstAttribute="centerX" secondItem="af1-ba-1Kc" secondAttribute="centerX" id="z6V-JR-4Jk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="af1-ba-1Kc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="20x-el-8z5"/>
+                            <constraint firstItem="af1-ba-1Kc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="2Xg-cZ-vu5"/>
+                            <constraint firstItem="af1-ba-1Kc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="j4Q-yo-xwo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="af1-ba-1Kc" secondAttribute="trailing" constant="50" id="j7P-SZ-bbl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swipe Card" largeTitleDisplayMode="always" id="jtz-yA-RSw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="pSv-nM-0jc">
+                            <connections>
+                                <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" id="lBx-Bf-J4j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cardView" destination="af1-ba-1Kc" id="pkb-1u-mmt"/>
+                        <outlet property="foodImageView" destination="zQ9-Kd-Dli" id="vJJ-l0-eNM"/>
+                        <outlet property="thumbImageView" destination="kvZ-f7-SFN" id="COC-yL-rMc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uUg-pt-zPO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z4J-bA-xmR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="8lw-hZ-u1f">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mDw-J0-oCC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNa-C4-Bhv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nasi-lemak" width="2696" height="2696"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+[
+  {
+    "reference": "001-567",
+    "name": "Chocolate Chip Cookie",
+    "price": 0.99,
+    "image": "chocolate-chip-cookie",
+    "calories": 238,
+    "description": "These cookies are decadent, chewy, and oh so delicious! Perfectly buttery and sweet."
+  },
+  {
+    "reference": "002-567",
+    "name": "Cupcake",
+    "price": 1.49,
+    "image": "cupcake",
+    "calories": 339,
+    "description": "This gourmet cupcake is filled with a creamy nougat center and topped with a delicious buttercream icing."
+  },
+  {
+    "reference": "003-567",
+    "name": "Strawberry Confetti Donut",
+    "price": 1.99,
+    "image": "donut",
+    "calories": 338,
+    "description": "Pair this tasty strawberry glazed donut with your favorite coffee or tea."
+  },
+  {
+    "reference": "004-567",
+    "name": "Croissant",
+    "price": 1.69,
+    "image": "croissant",
+    "calories": 323,
+    "description": "Enjoy this crispy European delicacy straight from your home and feel like on a vacation in Paris."
+  },
+  {
+    "reference": "005-567",
+    "name": "Chocolate Milkshake",
+    "price": 3.79,
+    "image": "chocolate-milkshake",
+    "calories": 585,
+    "description": "Delicious, creamy, and luscious chocolate shake!"
+  },
+  {
+    "reference": "006-567",
+    "name": "Dark Roast Coffee",
+    "price": 1.76,
+    "image": "coffee",
+    "calories": 4,
+    "description": "This full-bodied dark roast coffee has the bold and robust flavours to showcase our roasting artistry."
+  },
+  {
+    "reference": "007-567",
+    "name": "Earl Grey Tea",
+    "price": 1.56,
+    "image": "tea",
+    "calories": 0,
+    "description": "Essence of bergamot, a subtle citrus fruit, and a floral lavender note, are all essential to create this aromatically awesome tea flavor."
+  }
+]
